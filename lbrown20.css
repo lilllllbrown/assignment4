@@ -13,6 +13,7 @@ and open the template in the editor.
 @import url('reset.css');
 * {
     font-size:12pt;
+    	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 }
 
 .printonly{display:none;}
@@ -136,6 +137,7 @@ header{width:124%;}
 #topbox{
     padding: 1em 2em 0;
     width: 74.3333%;
+    color:black
 }
 #header {
     background-color: #3B5998;
@@ -654,8 +656,8 @@ figcaption{
 /* ===================  Main Content Section  =============================== */
 /* -------------------  Calendar page         ------------------------------- */
 .Absent{
-    color: #ffbfbf !important;
-    background: #aa0011 !important;
+    color: black !important;
+    background: #990033 !important;
     text-align: center;
 }
 
@@ -706,20 +708,20 @@ div.date{
 }
 
 .Late{
-    color: #24B300 !important;
-    background: #ddffdf !important;
+    color: black !important;
+    background: #9393CC !important;
     text-align: center;
 }
 
 .Personal{
-    color: #aa0011 !important;
-    background: #ffcfcf !important;
+    color: black !important;
+    background: #B3D1F0 !important;
     text-align: center;
 }
 
 .Present{
-    color: #24B300 !important;
-    background: #CCFFBF !important;
+    color: black  !important;
+    background: #C5C5E3 !important;
     text-align: center;
 }
 
@@ -727,8 +729,8 @@ div.date{
     border: dashed medium #ff0000 !important;
 }
 .Sick{
-    color: #aa0011 !important;
-    background: #ffadad !important;
+    color: black !important;
+    background: #80B2E6 !important;
     text-align: center;
 }
 
@@ -839,9 +841,9 @@ td.Jun div.date, td.Aug div.date{
 }
 
 #calendar table td.atoday {
-    color: #C33;
+    color: white;
     font-weight: bold;
-    background: #FF6;
+    background: #D5ACAC;
     border: 1px solid black;
 }
 tr:nth-child(3) > th:nth-child(1){border-top-left-radius:8px;}
@@ -1174,7 +1176,7 @@ footer p{
 
 /* -------  i put this here so you can have your name show up  -------------- */
 footer #author:after{
-    content:"Lily Brown";
+    content:"Aidan Goldman, Lily Brown & Ryan McCague";
 }
 
 #ProcessingTime{
@@ -1449,7 +1451,7 @@ media query templates
         /*color: #000;
         background-color: #fff;
         border-bottom: thick solid white;*/
-        border-right: thick solid white;
+        border: thick solid white;
         background-color: white;
     }
     #mainMenu a{
