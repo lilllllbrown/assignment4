@@ -3,7 +3,7 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
-/* 
+/*
     Created on : Feb 11, 2015, 5:04:31 PM
     Author     : GoldDust_Au
 */
@@ -18,175 +18,198 @@ and open the template in the editor.
 .printonly{display:none;}
 html, body {height: 100%;}
 
-    header,#studentInfo{
+header,#studentInfo{
     background-color: rgba(255, 255, 255, 0.26);
     padding:1%;
 
-    }
+}
 
-    body {
+body {
     width:100%;
     background:#fff;
     background-attachment:fixed;
     min-width:600px;
     font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-    }
+}
 
-    a{
+a{
     border-width: .1em;
-    }
+    padding: .1em;
+}
 
-    a[target="_blank"]{
+a[target="_blank"]{
     border-bottom: 2px solid red !important;
-    }
+}
 
-    a:link{
+a:link{
     color: navy;
     border-style: solid;
     border-color: transparent;
-    }
-    a:visited{
+}
+a:visited{
     color: #6666B3;
     /*#90C13E !important;*/
-    }
-    a:hover {
+}
+a:hover {
     border-style: solid;
     border-color: navy;
     background: #D8DFEA;
-    }
+    border-radius:8px;
+}
 
-    code{
+
+code{
     font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-    }
-    h1, h2, h3 {
+}
+h1, h2, h3 {
     display:block;
-    font-weight:bold;	
+    font-weight:bold;
     margin:.8em 0 .2em 0;
     padding:0;
-    }
-
-    h1{
+    border: thin solid gray;
+    background-color:lightgray;
+    text-align:center;
+}
+h1,h2,h3,p,ul,ol{width:75%;}
+#slide > ol > li{max-width:98%;}
+#submit > h2, #submit > h1, #upcoming div h1, #upcoming h1{
+    background-color:transparent;
+    border:none;
+    text-align:left;
+}
+h1{
     font-size:2em;
-    }
+}
 
-    h2, h2 a{
+h2, h2 a{
     font-size:1.5em;
-    }
+}
 
-    h3{
+h3{
     font-size:1.5em;
-    }
+}
 
-    img {
+img {
     margin:10px 0 5px;
 
-    }
-    #slide img {
+}
+#slide img {
 
     max-width: 100%;
-    }
+}
 
-    p {
+p {
     padding: .4em 0 .8em 0;;
     margin: 0;
-    }
-    ol li {
+}
+ol li {
     padding-bottom: 1em;
     clear: left;
-    }
-    ol ol li {
+}
+ol ol li {
     padding-bottom: 1em;
 
-    }
+}
 
-    strong{
+strong{
     font-weight:bolder;
-    }
-    .firstLine{
+}
+.firstLine{
     text-indent: 5em;
-    }
+}
 
-    /* style the errors in the form so they are visible */
-    .mistake {
+/* style the errors in the form so they are visible */
+.mistake {
     color: #fff;
     background-color:#800;
     border: thin solid #000;
-    }
+}
 
-    /* style the list of errors that will show before the form */
-    #errors ol li{
+/* style the list of errors that will show before the form */
+#errors ol li{
     color: #880000;
-    }
+}
 
 
-    /* ===================  Header  Section  ==================================== */
-    header{width:124%;}
-    #topbox{
+/* ===================  Header  Section  ==================================== */
+header{width:124%;}
+#topbox{
     padding: 1em 2em 0;
     width: 74.3333%;
-    }
-    #header {
+}
+#header {
     background-color: #3B5998;
     border-bottom:1px solid #000;
     color: #fff;
     padding:10px;
 
-    }
+}
 
-    #header a:link{
+#header a:link{
     color: #fff;
-    }
+}
 
-    #header a:hover{
+#header a:hover{
     background-color:#6D86B7;
-    }
+}
 
-    #classtitle{
-    font-size:14px; 
+#classtitle{
+    font-size:14px;
     font-weight:bold;
-    }
+}
 
-    .todaysdate{
+.todaysdate{
     float:right;
-    }
+}
 
-    #toolmenu{
+#toolmenu{
     float:right;
-    }
+}
 
-    /* ===================  Student Info Section  =============================== */
-    #studentInfo{  
+/* ===================  Student Info Section  =============================== */
+#studentInfo{
     color:black;
-    /* 
+    /*
     width: 16%;
     border: thick dashed #3B5998;
     float: left;*/
     margin-bottom: 1em;
     padding: .3em;
     width:124.9%;
-    }
-
-    #studentGrade{
+}
+#studentInfo:after{
+    content:"-Refresh page to see new background-\a";
+    white-space:pre;
     display:block;
-    }	
+    position:relative;
+    margin: 0 auto;
+    text-align:center;
+    width:100%;
+}
 
-    #studentGrade a:visited{
+#studentGrade{
+    display:block;
+}
+
+#studentGrade a:visited{
     color: navy;
-    }	
+}
 
-    #classRank{
+#classtitle > a:visited{color: navy !important;}
+
+#classRank{
     display:block;
-    }
+}
 
-    .noticeMe{ /* -------    for guests who are not registered , not accpeted submission */ 
+.noticeMe{ /* -------    for guests who are not registered , not accpeted submission */
     font-weight: bold;
     font-size: 16pt;
     color: #ff0000;
-    background: #ff3;	
-    }
+    background: #ff3;
+}
 
-    /* ===================  Main Navigation Section  ============================ */
-    #mainMenu{
+/* ===================  Main Navigation Section  ============================ */
+#mainMenu{
     /* border-bottom: thin solid #3B5998;
     float: right;
     font-size: 10pt;
@@ -199,34 +222,36 @@ html, body {height: 100%;}
     left:-3.5%;
     text-align:right;
     list-style-position: inside;
-    }
+    width:18%;
+}
 
-    #mainMenu ol{
+#mainMenu ol{
     /*padding-left:0;
     margin-left:0;*/
     list-style:none;
-    }
+}
 
-    #mainMenu .activeLink a{
-    /*color: #000;	
+#mainMenu .activeLink a{
+    /*color: #000;
     background-color: #fff;
     border-bottom: thick solid white;*/
     border-right: thick solid white;
-    }
-
-    #mainMenu a{
-    /*text-decoration: none;*/
-    }
-#mainMenu > ol > li.menuLink:nth-child(7){
-        min-width:110%;
 }
-  
+
+#mainMenu a{
+    /*text-decoration: none;*/
+}
+
 
 .menuLink{
     /*display: inline;*/
     margin-bottom: 11%;
-    }
-    .menuLink a{	
+    margin-right: -10%;
+}
+#mainMenu > ol > li.menuLink:nth-child(7){
+    min-width:110%;
+}
+.menuLink a{
     /*border-left: thin solid gray;
     border-top: thin solid gray;
     border-top-left-radius: 8px;
@@ -236,311 +261,368 @@ html, body {height: 100%;}
     border-top: thin solid gray;
     border-left: thin solid gray;
     border-bottom:thin solid gray;
-    
-    }
 
-    .menuLink a:link{
+}
+.menuLink a:before{
+    background:url("https://algoldma.w3.uvm.edu/cs142/assignment4/rocket.png");
+    content: " ";
+    display: block;
+    height: 40px;
+    position: absolute;
+    left:50%;
+    width: 50px;
+    z-index: -1;
+    -webkit-animation: myOrbit 4s linear infinite; /* Chrome, Safari 5 */
+    -moz-animation: myOrbit 4s linear infinite; /* Firefox 5-15 */
+    -o-animation: myOrbit 4s linear infinite; /* Opera 12+ */
+    animation: myOrbit 4s linear infinite; /* Chrome, Firefox 16+,
+    IE 10+, Safari 5 */
+}
+@-webkit-keyframes myOrbit {
+    from { -webkit-transform: rotate(0deg) translateX(50px) rotate(0deg); }
+    to { -webkit-transform: rotate(360deg) translateX(50px) rotate(-360deg); }
+}
+@-moz-keyframes myOrbit {
+    from { -moz-transform: rotate(0deg) translateX(50px) rotate(0deg); }
+    to { -moz-transform: rotate(360deg) translateX(50px) rotate(-360deg); }
+}
+@-o-keyframes myOrbit {
+    from { -o-transform: rotate(0deg) translateX(50px) rotate(0deg); }
+    to { -o-transform: rotate(360deg) translateX(50px) rotate(-360deg); }
+}
+@keyframes myOrbit {
+    from { transform: rotate(0deg) translateX(50px) rotate(0deg); }
+    to { transform: rotate(360deg) translateX(50px) rotate(-360deg); }
+}
+.menuLink a:link{
     background-color:#6296A1;
     border-left: thin solid #3B5998;
     border-top: thin solid #3B5998;
     border-right: thin solid #3B5998;
     color: navy;
     padding: 1em;
-    }
+}
 
-    nav#mainMenu ol li.menuLink a:visited{
+nav#mainMenu ol li.menuLink a:visited{
     background-color:#6296A1;
     border-left: thin solid #3B5998;
     border-top: thin solid #3B5998;
     border-right: thin solid #3B5998;
     color: navy !important;
     padding: 1em;
-    }
-    .menuLink a:hover{
+}
+.menuLink a:hover{
     background-color: #3B5998;
     border-left: thin solid green;
     border-top: thin solid green;
     border-right: thin solid green;
     color: white;
-    padding: 1em;	
-    }
+    padding: 1em;
+}
 
-    /* ===================  Main Content Section  =============================== */
-    #mainContent {
+/* ===================  Main Content Section  =============================== */
+#mainContent {
     background-color: rgba(255,255,255,0.75);;
-    border: 2px solid #FEFEFE;
-    border-radius: 0.5em;
-    overflow: auto;
+    border: hidden;
+    border-top-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
     padding: 2em 2em 50px;
     width: 74.3333%;
     float:right;
     margin-right:3em;
-    cursor: url(rocket1.cur), url(rocket1.png), url(rocket2.png);
-    }
-
-    #mainContent a:visited{
-    color: #6666b3; /*#ffaa11;*/
-    }
-
-    /*hilite me div goes out of bounds :( */
-    div[style*="background"], .code{
+    min-height:35%;
+}
+#mainContent{box-shadow: 0px 0px 125px white;}
+footer{box-shadow: 0px 0px 55px white;}
+/*hilite me div goes out of bounds :( */
+div[style*="background"], .code{
     width: 80% !important;
-    }
-    /* ===================  Main Content Section  =============================== */
-    /* -------------------  Student Grade Page    ------------------------------- */
+}
+/* ===================  Main Content Section  =============================== */
+/* -------------------  Student Grade Page    ------------------------------- */
 
-    /* -------------------------- Grades ---------------------------------------- */
+/* -------------------------- Grades ---------------------------------------- */
 
-    /* -- used for automatic grading -- */
-    .certain{
+/* -- used for automatic grading -- */
+.certain{
     background: #66aa66;
-    }
+}
 
-    .uncertain{
+.uncertain{
     background: #fff000;
-    }
-    /* -------------------------------- */
-    .newCriteria{
+}
+/* -------------------------------- */
+.newCriteria{
     background: #eeffee;
-    }
+}
 
-    .oldCriteria{
+.oldCriteria{
     background: #ffffff;
-    }
-    .wrongCriteria{
+}
+.wrongCriteria{
     background: #ffeeee;
-    }
+}
 
-    .zeroPoints {
+.zeroPoints {
     border: thin solid black;
-    }
-    .bonusPoints{
+}
+.bonusPoints{
     border: thin solid blue;
-    }
-    .avggrade {
+}
+.avggrade {
     background-color: #ffffcc !important;
     color: #ffcccc;
-    }
+}
 
-    .failing {
+.failing {
     background-color: red !important;
-    }
+}
 
-    .hypo {
+.hypo {
     background-color: lightgreen !important;
-    }
-    .percent{
+}
+.percent{
     float: right;
     padding-left: 0.25em;
-    }
-    #GradeCriteria{
+}
+#GradeCriteria{
     top: 75px;
     margin-bottom: 2em;
-    }
+}
 
-    .GradesReleased {
-    background-color: #66cc00 !important; 
+.GradesReleased {
+    background-color: rgb(207, 93, 93) !important;
     color: #ffffff !important;
-    }
-    .GradesReleased a:visited, .GradesReleased a:link{
+}
+
+.GradesReleased a:visited, .GradesReleased a:link{
     color: #ffffff !important;
-    }
-    .GradesReleased .highlight {
+}
+.GradesReleased .highlight {
     color: #000000;
-    }
+}
 
-    .GradingStarted {
-    background-color: #fff000 !important; 
+.GradingStarted {
+    background-color: #D7C43D !important;
     color: #000000 !important;
-    }
+}
 
-    .NotGraded {
-    background-color: #aa0000; 
+.NotGraded {
+    background-color: #772E39;
     color: #ffffcc;
-    }
-    #listStudents span.NotGraded {
-    background-color: #aa0000; 
+}
+#listStudents span.NotGraded {
+    background-color: #aa0000;
     color: #ffffcc;
-    }
+}
 
-    #listStudents span.notSubmitted:before{
+#listStudents span.notSubmitted:before{
     content: "* ";
-    }
-    #listStudents span.notSubmitted{
+}
+#listStudents span.notSubmitted{
     background-color: #fff;
     color: #000;
-    }
-    table#grading{
+}
+table#grading{
     margin: auto;
-    }
+}
 
-    table#grading, table#grading td, table#grading th{
-    border: 1px solid gray; 
-    padding: 8px; 
+table#grading, table#grading td, table#grading th{
+    border: 1px solid gray;
+    padding: 8px;
     text-align: center;;
     width:45%;
-    }
-    #grading > tbody > tr:nth-child(3) th{border-radius:0%;}
-    .standard {
+}
+
+.standard {
     color: Black;
     text-align: left;
     background-color: white;
     font-family:Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;;
     border-collapse: collapse;
     border-radius:8px;
-    }
-    .standard tbody{border-radius:8px;}
-    .standard th {
+}
+.standard th {
     border-color: black;
     color: white;
     border: solid #000 1px;
     background-color:  #3b90cc;
     text-align: center;
-   font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-    padding: 4px; 
-    }
+    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    padding: 4px;
+}
 
-    .standard td {
+.standard td {
     border: 1px dashed black;
     text-align: right;
     font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-    }
-    .standard > tbody > tr:nth-child(1) > td{
-        border-top-style:hidden;
-        border-left-style:hidden;
-        border-right-style:hidden;
-    }
-    .standard > tbody > tr:nth-child(2), .standard > tbody > tr:nth-child(3), .standard > tbody > tr:nth-child(4), .standard > tbody > tr:nth-child(5){
-        border-left-style:hidden;
-        border-right-style:hidden;
+}
+.standard tr{
+    border-left-style: hidden;
+    border-right-style: hidden;
+}
+#mainContent > table > tbody > tr.NotGraded.\33 3{border-bottom-style: hidden;}
+#mainContent > table > tbody > tr.GradesReleased.\32 2 > td.comments{width:50%;}
+#mainContent > table > tbody > tr:nth-child(1) > td {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+#mainContent > table > tbody > tr:nth-child(1){
+    border-style: solid solid dashed solid;
+    border-width: thin;
+}
+.standard > tbody > tr:nth-child(2), .standard > tbody > tr:nth-child(3), .standard > tbody > tr:nth-child(4), .standard > tbody > tr:nth-child(5){
+    border-left-style: solid;
+    border-right-style: solid;
+    border-width:1px;
+}
+#mainContent > table > tbody > tr:nth-child(5),#mainContent > table > tbody > tr:nth-child(4),#mainContent > table > tbody > tr:nth-child(3),#mainContent > table > tbody > tr:nth-child(2),#mainContent > table > tbody > tr:nth-child(1){
+    background-color: rgba(255,255,255,.5);
+    border-color:transparent;
+}
+/* ===================  Main Content Section  =============================== */
+/* -------------------  layout                ------------------------ */
 
-    }
-
-    /* ===================  Main Content Section  =============================== */
-    /* -------------------  layout                ------------------------ */
 
 
-    #slide{
-    /*	float: left;
+#slide{
+    /* float: left;
     width: 57.8888889%;/* 566px / 900px less some padding
     padding: 0 1em 2em 0;
     border-right: dashed thin #999;*/
-    }
-
-    #lectureSlide #otherMedia, #displayAssign #otherMedia, #lecture #otherMedia{
-    /*	float: right;
-    width: 17%; /* 331px / 900px */
-    }
-
-    #lecture #studentComments, #lectureSlide #studentComments, #displayAssign #studentComments{
+}
+#otherMedia,#upcoming{z-index:1;}
+#lectureSlide #otherMedia, #displayAssign #otherMedia, #lecture #otherMedia,#upcoming + #otherMedia{
+    background-color: rgba(255,255,255,.5);
+    border: 2px solid;
+    border-radius: 0.5em;
+    float: right;
+    font-size: 10px;
+    margin-left: 1em;
+    margin-top:.1em;
+    padding: 0.5em;
+    width: 20em;
+    position: fixed;
+    height:32%;
+    overflow:scroll;
+    overflow-x: hidden;
+    display:block;
+    top:63%;
+    left:75%;
+    text-indent:-5%;
+}
+#otherMedia:hover{
+    z-index:2;
+}
+#lecture #studentComments, #lectureSlide #studentComments, #displayAssign #studentComments{
     clear: both;
     margin-top: 1em; /* does not do anything :( */
     /*width: 36.7777778%; /* 331px / 900px */
-    }
-
-    #txtComments{
+}
+#txtComments{
     width: 80%;
     height: 5em;
-    }
-    /* -------------------  Assignment / Lectures pages  ------------------------ */
-    .assignment a{
+}
+/* -------------------  Assignment / Lectures pages  ------------------------ */
+.assignment a{
     color: #cc4444;
-    }
+}
 
-    ol.webReviewList li{
+ol.webReviewList li{
     list-style-type: none;
     margin-left: 0;
     font-size: xx-small;
-    }
+}
 
-    ol.webReviewList li.hidden{
+ol.webReviewList li.hidden{
     display:none;
-    }
+}
 
-    ol.webReviewList li.tentative{
+ol.webReviewList li.tentative{
     background-color: #ffcfcf;
     font-style: italic;
-    }
+}
 
-    ol.webReviewList li.tentative:before{
+ol.webReviewList li.tentative:before{
     content: "Tentative: ";
-        }
+}
 
-        .current{
-        border: thin solid #C3C3E5;
-        font-weight: bold;
-        }
+.current{
+    border: thin solid #C3C3E5;
+    font-weight: bold;
+}
 
-        /* the perr grading page to highlight the current student you are working on */
-        #peerGrade .current{
-        border: thick solid #C3C3E5;
-        font-weight: bold;
-        }
-        #peerGrade ol li{
-        padding: .5em;
+/* the perr grading page to highlight the current student you are working on */
+#peerGrade .current{
+    border: thick solid #C3C3E5;
+    font-weight: bold;
+}
+#peerGrade ol li{
+    padding: .5em;
 
-        }
-        .notStudentLink{ /* for instructor to see link is not avaliable to students */
-        background-color: #ffa;
-        }
+}
+.notStudentLink{ /* for instructor to see link is not avaliable to students */
+    background-color: #ffa;
+}
 
-        .summary{
-        display: block;
-        }
+.summary{
+    display: block;
+}
 
-        .title{
-        padding: .5em;
-        }
+.title{
+    padding: .5em;
+}
 
-        .small{
-        width: 150px;
-        }
-        .fifty{
-        width: 50%;
-        }
-        .onehundred{
-        width: 100%;
-        }
-        figure.img-left{
-        border: thin solid darkslategray;
-        float: left;
-        padding: .5em;
-        margin-right: 1em;
-        }
-        figcaption{
-        text-align: center;
-        color: #839E99;
-        font-style: italic; 
-        }
+.small{
+    width: 150px;
+}
+.fifty{
+    width: 50%;
+}
+.onehundred{
+    width: 100%;
+}
+figure.img-left{
+    border: thin solid darkslategray;
+    float: left;
+    padding: .5em;
+    margin-right: 1em;
+}
+figcaption{
+    text-align: center;
+    color: #839E99;
+    font-style: italic;
+}
 
-        .LecturesLink{ /* also used on calendar */  
-        list-style-type: none;
-        }
+.LecturesLink{ /* also used on calendar */
+    list-style-type: none;
+}
 
-        .lectureLeftPicture{
-        float: left; 
-        padding-right: 1em;
-        }
+.lectureLeftPicture{
+    float: left;
+    padding-right: 1em;
+}
 
-        .lectureRightPicture{
-        float: right; 
-        padding-left: 1em;
-        }
+.lectureRightPicture{
+    float: right;
+    padding-left: 1em;
+}
 
-        .videoList li{
-        list-style-type: none;	
-        }
+.videoList li{
+    list-style-type: none;
+}
 
-        #otherMedia ol li{
-        list-style-type: none;
-        clear: both;
-        border-top: thin dotted  #999999;
-        padding-top: .4em;
-        padding-bottom: .4em;
-        }
+#otherMedia ol li{
+    list-style-type: none;
+    clear: both;
+    border-top: thin dotted #999999;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    margin-left:-35%;
+}
 
-        #otherMedia ol li a[href*="http://"]{
-        border-left: darkblue solid medium;
+#otherMedia ol li a[href*="http://"]{
+    border-left: darkblue solid medium;
     border-bottom: darkblue solid medium;
     padding-left: 1em;
     padding-right: 1em;
@@ -574,14 +656,14 @@ html, body {height: 100%;}
 .Absent{
     color: #ffbfbf !important;
     background: #aa0011 !important;
-    text-align: center;	
+    text-align: center;
 }
 
 .assignment{
     color: #cc4444;
     margin:0;
     padding: 0.125em 0.25em 0 0.25em;
-    text-align:center; 	 
+    text-align:center;
 }
 
 .callInSick{
@@ -590,20 +672,20 @@ html, body {height: 100%;}
 }
 
 div.date{
-    float: right; 
-    text-align:center; 
-    border: 1px solid gray; 
-    border-width: 0 0 1px 1px; 
-    padding: 0.125em 0.25em 0 0.25em; 
-    margin:0;  
-    background: #F3F3F3; 
+    float: right;
+    text-align:center;
+    border: 1px solid gray;
+    border-width: 0 0 1px 1px;
+    padding: 0.125em 0.25em 0 0.25em;
+    margin:0;
+    background: #F3F3F3;
     width: 2em;
 }
 
 .Excused{
     color: #aa0011 !important;
     background: #ffadad !important;
-    text-align: center;	
+    text-align: center;
 }
 
 #fullCalendar{
@@ -614,25 +696,25 @@ div.date{
 .labComplete{
     color: #24B300 !important;
     background: #ffcfcf !important;
-    text-align: center;	
+    text-align: center;
 }
 
 .FreeDay{
     color: #24B300 !important;
     background: #aacfcf !important;
-    text-align: center;	
+    text-align: center;
 }
 
 .Late{
     color: #24B300 !important;
     background: #ddffdf !important;
-    text-align: center;	
+    text-align: center;
 }
 
 .Personal{
     color: #aa0011 !important;
     background: #ffcfcf !important;
-    text-align: center;	
+    text-align: center;
 }
 
 .Present{
@@ -647,7 +729,7 @@ div.date{
 .Sick{
     color: #aa0011 !important;
     background: #ffadad !important;
-    text-align: center;	
+    text-align: center;
 }
 
 .submitted{
@@ -657,15 +739,15 @@ div.date{
 .notSubmitted{
     border:thin solid red;
 }
-.TOPIC { 
-    color: #4444CC; 
-    text-align:center; 
-    padding: 0.125em 0.25em 0 0; 
-    margin:0;  
+.TOPIC {
+    color: #4444CC;
+    text-align:center;
+    padding: 0.125em 0.25em 0 0;
+    margin:0;
 }
 
 .VACA {
-    background-color: #dfdfff; /*#EABFFF;*/ 
+    background-color: #dfdfff; /*#EABFFF;*/
     font-style: italic;
 }
 
@@ -707,7 +789,7 @@ tr.days th.sat, tr.days th.sun {
 }
 
 #calendar table tr#title th {
-    background-color: #AAC; 
+    background-color: #AAC;
     color: black;
     border: 1px solid #242;
     font-size: 120%;
@@ -715,8 +797,8 @@ tr.days th.sat, tr.days th.sun {
 
 #calendar table td {
     vertical-align:top;
-    padding:3px; 
-    border: 0px solid gray; 
+    padding:3px;
+    border: 0px solid gray;
     border-width: 0 0 1px 1px;
     width:14%;
 }
@@ -728,27 +810,27 @@ tr.days th.sat, tr.days th.sun {
 #calendar table a {
     text-decoration: none;
     font-weight: bold;
-    display: block; 
+    display: block;
 }
 
 td.Sat div.date, td.Sun div.date{
     border-width: 0;
-    color: gray; 
+    color: gray;
     background: transparent;
 }
 
 td.Jun div.date, td.Aug div.date{
-    border-width: 0; 
-    color: gray; 
+    border-width: 0;
+    color: gray;
     background: transparent;
-}	
+}
 
 #calendar table td.Sat, #calendar table td.Sun {
     background: #ddd;
 }
 
 #calendar table td.lastMonth, #calendar table td.nextMonth, #calendar table td.prevMonth {
-    background: #AAB; 
+    background: #AAB;
     color: #889;
 }
 
@@ -758,8 +840,8 @@ td.Jun div.date, td.Aug div.date{
 
 #calendar table td.atoday {
     color: #C33;
-    font-weight: bold; 
-    background: #FF6; 
+    font-weight: bold;
+    background: #FF6;
     border: 1px solid black;
 }
 tr:nth-child(3) > th:nth-child(1){border-top-left-radius:8px;}
@@ -791,23 +873,24 @@ tr:nth-child(36) > td:nth-child(2){border-bottom-right-radius: 8px;}
 /* ===================  Main Content Section  =============================== */
 /* -------------------  Call in sick Page     ------------------------------- */
 
-
+.form{width:73%;}
 /* ===================  Main Content Section  =============================== */
 /* -------------------  Syllabus Page         ------------------------------- */
 .noBorder{border: 0px;}
-
-.hideText{ 
+.hideText{
     color: #ffffff;
 }
-
 .emailText{
-    color: #adadad;
+    color: lightgray;
 }
-.highlightRed{ 
-    background-color: #cc0033;
+.highlightRed{
+    background-color: #772e39;
     color: #ffffff;
 }
 #syllabus table{border-radius:8px;}
+#grading th, #grading td{
+    border-radius:8px;
+}
 #mainContent > table:nth-child(7) > tbody > tr:nth-child(1) > th,#mainContent > table:nth-child(7) > tbody > tr:nth-child(4) > th{
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -819,16 +902,25 @@ tr:nth-child(36) > td:nth-child(2){border-bottom-right-radius: 8px;}
     border-bottom-right-radius:8px;
 }
 #syllabus table, #syllabus table td, #syllabus table th{
-    border: 1px solid gray; 
-    padding: 3px; 
+    border: 1px solid gray;
+    padding: 3px;
 }
+#syllabus table{
+    background-color:#191d29;
+    max-width:75%;
+}
+#syllabus table td, #syllabus table th{background-color:#b4b1c6}
+#tahours{
+    width:75%;
+}
+#tahours > h2{width:100%;}
 #tahours .hourBox:hover{
     background-color: highlight;
-    color: white;
+    color: black;
 }
 #tahours .hourBox{
     padding: .3em;
-    border: thin solid blue;
+    border: 2px solid #6296a1;
     border-radius: 8px;
     text-align: center;
     left: 0;
@@ -837,26 +929,30 @@ tr:nth-child(36) > td:nth-child(2){border-bottom-right-radius: 8px;}
     margin-left:2px;
     margin-right:2px;
 }
-
 #tahours span{
     display: block;
 }
 #tahours .dayColumn{
     float: left;
     font-size: 10px;
-    width: calc(100%/5.1);
+    width: calc(99%/5.16);
     min-height:700px;
-    margin-right:-1px;
-    border:thin solid black;
+    margin-right:-.3%;
+    border:medium solid #191d29;
+    background-color:#B4B1C6;
 }
 .dayColumn:nth-child(5){margin-right:0;}
-.dayColumn:nth-child(6){border-top-right-radius:8px;    border-bottom-right-radius:8px;}
-.dayColumn:nth-child(2){border-top-left-radius:8px;    border-bottom-left-radius:8px;}
+.dayColumn:nth-child(6){border-top-right-radius:8px; border-bottom-right-radius:8px;}
+.dayColumn:nth-child(2){border-top-left-radius:8px; border-bottom-left-radius:8px;}
 #tahours .header{
     text-align: center;
     font-weight: bold;
     border-bottom:thin solid black;
+    background-color:black;
+    color:white;
 }
+#tahours a:link{color:#6296a1;}
+#tahours a:visited{color:#6296a1;}
 #tahours a:hover{
     background-color: highlight;
     border-style:thin;
@@ -872,27 +968,26 @@ tr:nth-child(36) > td:nth-child(2){border-bottom-right-radius: 8px;}
     border-top: 1px dashed navy;
     padding: 1em 1em 1em 1em;
 }
-#submitAssignment iframe{ 
+#submitAssignment iframe{
     width:70%;
 }
-
 .left {
     text-align: left;
 }
-
 .submith1{font-weight: bold;
           font-size: 14pt;
 }
-
 #submitAssignments{
     width: 80%;
 }
-
-
 #txtDateRequest{
     width: 7em;
 }
-
+#chooseAssignment > fieldset{
+    width: 36%;
+    text-align: left;
+}
+#submit > h2:nth-child(4){margin-top:5%;}
 /* ===================  Main Content Section  =============================== */
 /* -------------------  Lecture Page          ------------------------------- */
 #frmDemo{
@@ -910,32 +1005,32 @@ tr:nth-child(36) > td:nth-child(2){border-bottom-right-radius: 8px;}
 
 #frmDemo table, #tblValidation {
     margin: auto;
-    border-collapse: collapse; 
+    border-collapse: collapse;
     border: 1px solid #839E99;
-    background: #f1f8ee; 
+    background: #f1f8ee;
     font: .7em Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-    color: #033; 
+    color: #033;
 }
 
 #frmDemo table td, #frmDemo table th, #tblValidation td, #tblValidation th { padding: 3px 3px .75em 10px; line-height: 1.3em; 	border: thin dotted gray;}
 #frmDemo table th , #tblValidation th{
-    font-weight: bold; 
-    text-align: center; 
-    padding-right: .5em; 
+    font-weight: bold;
+    text-align: center;
+    padding-right: .5em;
     vertical-align: top;
 }
-#frmDemo table td, #tblValidation td { 
-    text-align: left; 
+#frmDemo table td, #tblValidation td {
+    text-align: left;
     padding-right: 1em;
-    border: thin dotted gray; 
+    border: thin dotted gray;
 }
 
 #frmDemo, #tblValidation .odd {background-color: #DBE6DD;}
 #frmDemo, #tblValidation .even {background-color: #ffffff;}
 
 #sampleData table, #sampleData td, #sampleData th {
-    border-collapse:collapse; 
-    border: thin solid black; 
+    border-collapse:collapse;
+    border: thin solid black;
     padding: .5em;
 }
 
@@ -944,7 +1039,7 @@ tr:nth-child(36) > td:nth-child(2){border-bottom-right-radius: 8px;}
 }
 
 #tablestructure, #tablestructure td, #tablestructure th{
-    border:thin solid black; 
+    border:thin solid black;
     border-collapse:collapse;
     padding: .5em;
 }
@@ -977,7 +1072,7 @@ div #studentComments{
 }
 
 .poster{
-    font-weight: bold;	
+    font-weight: bold;
 }
 
 .comment{
@@ -990,9 +1085,7 @@ div #studentComments{
     margin-bottom: -.1em;
 }
 /* -------------------  lecture slide page   ------------------------------- */
-
-#otherMedia{
-    background-color: #FFF8DC;
+#upcoming + #otherMedia{
     border: 2px solid;
     border-radius: 0.5em;
     clear: right;
@@ -1002,7 +1095,6 @@ div #studentComments{
     padding: 0.5em;
     width: 20em;
 }
-
 #media #otherMedia{
     background-color: white;
     border: none;
@@ -1013,7 +1105,6 @@ div #studentComments{
     padding: 0em;
     width: 100%;
 }
-
 #media #otherMedia > h1{
     display:none;
 }
@@ -1021,68 +1112,69 @@ div #studentComments{
     clear: none;
 }
 /* -------------------upcoming aside  ------------------------------- */
-
 aside#upcoming{
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(255,255,255,.5);
     border: 2px solid;
     border-radius: 0.5em;
     clear: both;
+    display:block;
     float: right;
     font-size: 10px;
     margin-left: 1em;
     padding: 0.5em;
     width: 20em;
-    transition:background-color 2.5s;
+    position: fixed;
+    left: 75%;
+    height:35%;
+    overflow:scroll;
 }
 #upcoming div.box{
     clear: both;
 }
-
 #upcoming h2{
     float: left;
     margin: 0;
 }
-
+#upcoming > h1:first-child{margin-bottom:5%;}
+#upcoming div h1{margin-bottom:-6%;margin-top:-6%;}
 #upcoming ol li{
     display: inline-block;
     margin:0;
     padding-left: .2em;
 }
-
 #upcoming ol.LecturesLink, #upcoming ol.AssignmentLink, #upcoming ol.examLink{
     padding-left: 0;
 }
-
 #upcoming:hover{
-    background-color:#FFF8DC;
+    z-index:2;
 }
 /* ===================  Footer Section        =============================== */
 footer{
-    background-color: #3B5998;
-    border: 2px solid #3B5998;
+    background-color: #b4b1c6;
+    border: hidden;
     border-bottom-left-radius: 0.5em;
     border-bottom-right-radius: 0.5em;
     clear: both;
     color: #FFFFFF;
     height: 50px;
     left: 0;
-    margin-top: -50px;
     margin-bottom: 20px;
     margin-right:3em;
     padding: 2em 2em 0;
     position: relative;
     float:right;
     top: 0;
-    width: 74.3333%;
+    width: 74.333333333%;
 }
 
 footer p{
     padding: 1em;
+    text-align:right;
 }
 
 /* -------  i put this here so you can have your name show up  -------------- */
 footer #author:after{
-    content:"Robert Erickson"; 
+    content:"Lily Brown";
 }
 
 #ProcessingTime{
@@ -1090,14 +1182,14 @@ footer #author:after{
 }
 
 /* ===================  Non validating Section  ============================= */
-pre { 
+pre {
     white-space: pre-wrap;       /* css-3 */
     word-wrap: break-word;
     border: thin solid black;
     padding: 1.25em;
 }
 
-code{ 
+code{
     white-space: pre-wrap;       /* css-3 */
     padding: 1.25em;
 }
@@ -1121,8 +1213,10 @@ ul#icons span.ui-icon {float: left; margin: 0 4px;}
 body{
     background-color: #dcdbd9;
     color: #2C2C2C;
-    font: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-    background-image: url(https://algoldma.w3.uvm.edu/cs142/assignment4/hubble/randomBG.jpg);
+    font: normal 100% Cambria, Georgia, serif;
+    background-image: url(https://algoldma.w3.uvm.edu/cs142/assignment4/hubble/randomBg.php);
+    background-repeat: repeat-y;
+    background-size:100%;
     width: 100%;
     margin: 0 auto;
 }
@@ -1156,6 +1250,9 @@ h1{
 #classtitle{
     font-size: 1.3em;
     font-weight:bold;
+    background-color: transparent;
+    border: none;
+    text-align:left;
 }
 
 #toolmenu{
@@ -1168,7 +1265,7 @@ h1{
 
 
 #termOfSubmission ol li li{
-    list-style-type: lower-alpha;	
+    list-style-type: lower-alpha;
 }
 
 table#asciiTable, table#asciiTable td{
@@ -1187,20 +1284,20 @@ media query templates
 
 /* ===================  Gradeing criteria pages  ============================= */
 #peerCriteria article section{
-    border: thin solid black; 
-    float: left; 
-    width: 40%; 
-    margin-right: 2em; 
-    margin-bottom: 2em; 
+    border: thin solid black;
+    float: left;
+    width: 40%;
+    margin-right: 2em;
+    margin-bottom: 2em;
     padding: .6em;
 }
 
 #peerCriteria article section .percent{
-    background-color: #CCFFBF; 
+    background-color: #CCFFBF;
     float:right;
 }
 
-#peerCriteria article section h2, 
+#peerCriteria article section h2,
 #peerCriteris article section p{
     margin:0 .3em .3em .3em;
 }
@@ -1214,11 +1311,12 @@ media query templates
     body{
         background-color: black;
         color: #2C2C2C;
-        font: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+        font: normal 100% Cambria, Georgia, serif;
         background-image: url(https://algoldma.w3.uvm.edu/cs142/assignment4/hubble/randomBG.jpg);
+        background-repeat: repeat;
+        background-size:100%;
         margin: 0 auto;
     }
-
     #toolmenu{
         float:none;
         margin-top: 0;
@@ -1233,11 +1331,13 @@ media query templates
 @media screen and (max-width: 520px){
     body{
         background-image: url(https://algoldma.w3.uvm.edu/cs142/assignment4/hubble/randomBG.jpg);
+        background-repeat: repeat;
+        background-size:100%;
         background-color: grey;
         color: #2C2C2C;
         font: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
         margin: 0 auto;
-    }	
+    }
     #toolmenu{
         float:none;
         margin-top: 0;
@@ -1245,27 +1345,30 @@ media query templates
     }
     #toolmenu:before {
         content: 'Max-Width: 520px';
-    }	
+    }
 }
 
 @media screen and (max-width: 768px){
     body{
         background-color: #880000;
         background-image: url(https://algoldma.w3.uvm.edu/cs142/assignment4/hubble/randomBG.jpg);
+        background-repeat: repeat;
+        background-size:100%; 
         color: #2C2C2C;
         font:Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
         margin: 0 auto;
-    }	
+    }
     #toolmenu:before {
         content: 'Max-Width: 768px';
-    }	
+    }
 }
 
 /**************************************************/
 @media screen and (max-width: 520px){
     /* ===================  Main Navigation Section  ============================ */
     #mainMenu{
-        margin: 2em;	
+        margin: 2em;
+        max-width: 120%;
     }
 
     #mainMenu a, #adminMenu a{
@@ -1276,7 +1379,7 @@ media query templates
         display: block;
         min-height:4em;
     }
-    .menuLink a{	
+    .menuLink a{
         border-left: thin solid gray;
         border-top: thin solid gray;
         border-top-left-radius: 8px;
@@ -1285,44 +1388,47 @@ media query templates
         border-bottom-right-radius: 8px;
     }
 
-    .menuLink a:link{
-
-        padding: 2em;
-    }
-
-    .menuLink a:visited{
-
-        padding: 2em;
-    }
-    .menuLink a:hover{
-
-        padding: 2em;	
-    }
 
     /* ------------------  admin menu  ------------------------------------------ */
     #adminMenu{
-
-
-
         margin: 2em;
-
     }
-
-
+    body{
+        background-image: url(https://algoldma.w3.uvm.edu/cs142/assignment4/hubble/randomBg.php);
+        background-repeat: repeat;
+        background-size:100%;
+    }
+    #upcoming, #otherMedia {
+        height:35%;
+        position:static;
+    }
+    aside#upcoming{
+        position:static !important;
+        overflow:scroll;
+        margin-top:33%;
+    }
+    #lectureSlide #otherMedia, #displayAssign #otherMedia, #lecture #otherMedia, #upcoming + #otherMedia{
+        position:static !important;
+        overflow:scroll;
+        overflow-x: hidden;
+    }
+    p,ol,ul{width:95%;}
 }
 /*************************************************/
 @media screen and (min-width: 1200px){
     body{
         color: #2C2C2C;
-        background-image: url(https://algoldma.w3.uvm.edu/cs142/assignment4/hubble/randomBg.php);        
+        background-image: url(https://algoldma.w3.uvm.edu/cs142/assignment4/hubble/randomBg.php);
+        background-repeat: repeat-y;
+        background-size:100%;
         background-color: black;
-        font: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+        font: normal 100% Cambria, Georgia, serif;
         width: 1200px;
         margin: 0 auto;
     }
     #mainMenu{
         /* border-bottom: thin solid #3B5998;
-         float: right;
+        float: right;
         font-size: 10pt;
         margin: auto;
         min-width: 50em;
@@ -1334,44 +1440,37 @@ media query templates
         text-align:right;
         list-style-position: inside;
     }
-
     #mainMenu ol{
         /*padding-left:0;
         margin-left:0;*/
         list-style:none;
     }
-
-    #mainMenu .activeLink a{
-        /*color: #000;	
+    #mainMenu .menuLink.activeLink a{
+        /*color: #000;
         background-color: #fff;
         border-bottom: thick solid white;*/
-        border: thick solid white;
+        border-right: thick solid white;
+        background-color: white;
     }
-
     #mainMenu a{
         /*text-decoration: none;*/
     }
-
     .menuLink{
+        /*display: inline;*/
         margin-bottom: 11%;
     }
     #toolmenu:before {
-        content: '<form><input type="button" onClick="history.go(0)" value="Refresh"></form>';
+        content: 'Min-Width 1200px';
     }
-
     .menuLink a:link{
-
         padding: .5em;
-        
+        width:10%;
     }
-
     .menuLink a:visited{
-
         padding: 1em;
     }
     .menuLink a:hover{
-
-        padding: 1em;	
+        padding: 1em;
     }
 }
 @media screen and (max-width: 1050px){
@@ -1384,12 +1483,43 @@ media query templates
         border-radius:8px 8px 0 0;
     }
     #mainMenu{
-        width:110%;
-        padding-left:15%;
+        min-width:140%;
         position:relative;
     }
     #mainMenu ol{height:3em;}
     #toolmenu:before {
         content: 'Min-Width: 1050px';
+    }
+    body{
+        background-image: url(https://algoldma.w3.uvm.edu/cs142/assignment4/hubble/randomBg.php);
+        background-repeat: repeat;
+        background-size:100%;
+    }
+    #upcoming,#otherMedia{max-height:25%;}
+    #upcoming{top:35%;}
+}
+@media screen and (max-width: 882px){
+    #upcoming,#otherMedia{max-height:35%; margin-right:2%;}
+    #upcoming{top:23%;}
+}
+@media screen and (max-width: 1150px){
+    #mainMenu{width:initial;}
+    #taHours .dayColumn{width:calc(74%/5.16)}
+}
+@media screen and (max-width: 965px){
+    #tahours > div:nth-child(6){margin-right:-2%;}
+}
+@media screen and (min-width:1315px){
+    aside#upcoming{left:71%;}
+    #lectureSlide #otherMedia, #displayAssign #otherMedia, #lecture #otherMedia, #upcoming + #otherMedia{left:71%;}
+}
+@media screen and (max-height:744px){
+    aside#upcoming{
+        top:28%;
+        min-height:20%;
+    }
+    #lectureSlide #otherMedia, #displayAssign #otherMedia, #lecture #otherMedia{
+        margin-top:3%;
+        max-height:22%;
     }
 }
