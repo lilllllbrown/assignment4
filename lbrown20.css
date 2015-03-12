@@ -1345,7 +1345,7 @@ media query templates
         /*color: #000;	
         background-color: #fff;
         border-bottom: thick solid white;*/
-        border-right: thick solid white;
+        border: thick solid white;
     }
 
     #mainMenu a{
@@ -1353,7 +1353,6 @@ media query templates
     }
 
     .menuLink{
-        /*display: inline;*/
         margin-bottom: 11%;
     }
     #toolmenu:before {
